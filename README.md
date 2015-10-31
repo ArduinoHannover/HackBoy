@@ -5,7 +5,7 @@
 [TFT Library](https://github.com/sumotoy/TFT_ILI9163C)
 
 
-== Guide for writing Games
+## Guide for writing Games
 
 First of all, great that you're interested! As there will be two hardware versions - one with a ATmega328 and 128x128 screen and another with ATSAM3X8E (Arduino DUE), please write the game logic independent from the graphics. How do I do that?
 
@@ -17,6 +17,6 @@ First of all, great that you're interested! As there will be two hardware versio
 
 Have a look at the BareBasic or BareBasicClass [recommend] Sketch included.
 
-= Function Prototypes
+### Function Prototypes
 
 Function prototypes declare that a function exists. So for a function `void move(uint8_t steps) {...}` your prototype will be `void move(uint8_t);`.
