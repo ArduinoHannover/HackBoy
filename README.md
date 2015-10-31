@@ -1,8 +1,7 @@
-# Ardtendo
+# Hack Boy
 
-[Adafruit GFX](https://github.com/adafruit/Adafruit-GFX-Library)
+All external libraries neede are included. Just go ahead and include `<SPI.h>` and `<HackBoy.h>`.
 
-[TFT Library](https://github.com/sumotoy/TFT_ILI9163C)
 
 
 ## Guide for writing Games
