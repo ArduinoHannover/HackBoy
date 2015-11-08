@@ -6,7 +6,7 @@ All external libraries neede are included. Just go ahead and include `<SPI.h>` a
 
 ## Guide for writing Games
 
-First of all, great that you're interested! As there will be two hardware versions - one with a ATmega328 and 128x128 screen and another with ATSAM3X8E (Arduino DUE), please write the game logic independent from the graphics. How do I do that?
+First of all, great that you're interested! As there will be two hardware versions - one with a ATmega328 and 128x128 screen and another with ATSAM3X8E (Arduino DUE) coming with a 240 by 320 screen - please write the game logic independent from the graphics. How do I do that?
 
 * In Arduino create a new Tab (top right drop down arrow), name it mygame.cpp [replace mygame with your games title]. There you can write down all the logic and variables needed. Now create another file mygame.h. Put in all your function prototypes [see note below] and static variables/defines etc. Include that with `#include "mygame.h"`
 
