@@ -18,4 +18,4 @@ Have a look at the BareBasic or BareBasicClass [recommend] Sketch included.
 
 ### Function Prototypes
 
-Function prototypes declare that a function exists. So for a function `void move(uint8_t steps) {...}` your prototype will be `void move(uint8_t);`.
+Function prototypes declare that a function exists. So for a function `void move(uint8_t steps) {...}` your prototype will be `void move(uint8_t);`. But the easiest learning is provided by taking a look at the examples ;-)
