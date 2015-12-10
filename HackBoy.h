@@ -25,7 +25,7 @@
 
 #define __CS 10
 #define __DC 9
-#define __RST 11
+#define __RST 12
 
 //#define SIMPLE_SETUP
 
