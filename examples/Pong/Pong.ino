@@ -214,7 +214,7 @@ void loop(void) {
 			tft.setCursor(40,40);
 			tft.println("You");
 			tft.setCursor(0,64);
-			tone(3, 110-330*(ball[0] < 64) == player), 600);
+			tone((3, 110-330*(ball[0] < 64) == player), 600);
 			tft.print((1 + (ball[0] < 64) == player) ? "  won!" : "lost :(");
 			while(!HackBoy.getStartKey());
 			showMenu();
