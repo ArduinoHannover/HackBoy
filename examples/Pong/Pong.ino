@@ -190,7 +190,7 @@ void loop(void) {
 			speed = min(110, (touches >> 2) + 1);
 			movement[2] = speed;
 			movement[3] = (ball[1] - p1_paddle) / 3 * movement[2];
-			tone(3, 440, 50);
+			HackBoy.note(NOTE_A, 50);
 		}
 	} else if (ball[0] >= 116 && ball[0] < 121 && movement[2] > 0) {
 		if (p2_paddle+10 >= ball[1] && p2_paddle-10 <= ball[1]) {
@@ -199,7 +199,7 @@ void loop(void) {
 			movement[2] = - speed;
 			movement[3] = (ball[1] - p2_paddle) / 3 * -movement[2];
 			hit_diff = 7 - random(17);
-			tone(3, 440, 50);
+			HackBoy.note(NOTE_A, 50);
 		}
 	} else if (ball[0] <= 6 || ball[0] >= 122) {
 		tft.fillRect((player == 2 ? (126 - ball[0]) : (ball[0] - 2)), ball[1]-2, 4, 4, BLACK);
@@ -214,13 +214,13 @@ void loop(void) {
 			tft.setCursor(40,40);
 			tft.println("You");
 			tft.setCursor(0,64);
-			tone((3, 110-330*(ball[0] < 64) == player), 600);
+			HackBoy.note(110+330*(ball[0] < 64) == player), 600);
 			tft.print((1 + (ball[0] < 64) == player) ? "  won!" : "lost :(");
 			while(!HackBoy.getStartKey());
 			showMenu();
 			return;
 		} else {
-			tone(3, 110, 400);
+			HackBoy.note(110, 400);
 		}
 		movement[3] = 0;
 		movement[2] = 1 - ((ball[0] < 64) * 2);
