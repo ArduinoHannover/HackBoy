@@ -1,5 +1,5 @@
-#ifndef GAMEBOX_H
-#define GMAEBOX_H
+#ifndef HACKBOY_H
+#define HACKBOY_H
 
 #include <SPI.h>
 
@@ -104,4 +104,4 @@ extern TFT_ILI9163C tft;
 #define NOTE_B		NOTE_AIS
 #define NOTE_H		493.88
 
-#endif //GAMEBOX_H
+#endif //HACKBOY_H
