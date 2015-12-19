@@ -220,7 +220,7 @@ void drawPlayer(Player* pawn, boolean erase) {
 			}
 		}
 	}
-	if (pawn != getMyGuy() && (erase || (pawn->x == getMyGuy()->x && pawn->y == getMyGuy()->y))) {
+  if (pawn != getMyGuy() && (erase || (pawn->x == getMyGuy()->x && pawn->y == getMyGuy()->y))) {
 		restoreDot(pawn->x, pawn->y);
 		displayFruit(pawn);
 		drawPlayer(getMyGuy(), false);
