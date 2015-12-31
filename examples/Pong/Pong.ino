@@ -43,6 +43,8 @@ void drawField(boolean clear) {
 
 void startGame(uint8_t mode) {
 	multiplayer = false;
+  points[0] = 0;
+  points[1] = 0;
 	if (mode == 3) {
 		player = HackBoy.startMultiplayer();
 		if (player) multiplayer = true;
@@ -71,8 +73,6 @@ void startGame(uint8_t mode) {
 	movement[2] = -1;
 	movement[3] = 0;
 	touches = 0;
-	points[0] = 0;
-	points[1] = 0;
 	drawField(true);
 }
 
